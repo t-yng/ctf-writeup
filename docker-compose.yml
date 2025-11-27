@@ -1,0 +1,15 @@
+services:
+  kali:
+    build: ./docker/kali
+    image: kali-linux:latest
+    container_name: kali-linux
+    stdin_open: true
+    tty: true
+    privileged: true
+    volumes:
+      - .:/home/kali/tryhackme
+    cap_add: # Add host network privileges to the container
+      - NET_RAW
+      - NET_ADMIN
+    network_mode: host
+    working_dir: /home/kali/tryhackme

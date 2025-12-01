@@ -1,8 +1,12 @@
 FROM kalilinux/kali-rolling
 
+# Install Basic tool set
+RUN apt update && apt install -y kali-linux-default
+
 # Install packages
-RUN apt update && apt install -y \
-    kali-linux-default \  # Basic tool set
+# RUN another command to cache kali-linux-default
+# This can cause refer outdated packages because the list is cached above.
+RUN apt install -y \
     iputils-ping
 
 # Create kali user

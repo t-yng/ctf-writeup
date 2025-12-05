@@ -1,9 +1,9 @@
-# Vulnversity
+# Ignite
 
 ## Room Information
 
 - **Difficulty:** Easy
-- **Room URL:** https://tryhackme.com/room/ignite
+- **Room URL:** [https://tryhackme.com/room/ignite](https://tryhackme.com/room/ignite)
 - **Date Completed:** 2025-11-27
 
 ## Overview

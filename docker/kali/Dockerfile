@@ -9,6 +9,12 @@ RUN apt update && apt install -y kali-linux-default
 RUN apt install -y \
     iputils-ping
 
+# Install rustscan(arm64)
+RUN wget https://github.com/RustScan/RustScan/releases/download/2.4.1/aarch64-linux-rustscan.zip && \
+    unzip aarch64-linux-rustscan.zip && \
+    mv rustscan /usr/local/bin/ && \
+    rm aarch64-linux-rustscan.zip
+
 # Create kali user
 RUN useradd -m -s /bin/bash kali && \
     echo "kali:kali" | chpasswd
@@ -23,4 +29,5 @@ WORKDIR /home/kali
 # Add aliases
 # nmap uses eth1 as default and fails to icmp, so specify the network interface for nmap to use eth0
 RUN echo "alias nmap='nmap -e eth0'" >> ~/.bashrc
+RUN echo 'function rustscan() { command rustscan "$@" -- -e eth0; }' >> ~/.bashrc
 RUN echo "" >> ~/.bashrc

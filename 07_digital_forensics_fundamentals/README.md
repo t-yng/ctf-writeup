@@ -107,6 +107,8 @@ GPS Position                    : 51 deg 30' 51.90" N, 0 deg 5' 38.73" W
 [...]
 ```
 
+![image.png](images/image1.png)
+
 ## Tools Used
 
 - pdfinfo
@@ -114,5 +116,5 @@ GPS Position                    : 51 deg 30' 51.90" N, 0 deg 5' 38.73" W
 
 ## Completed
 
-![image.png](images/image1.png)
+![image.png](images/image2.png)
 

@@ -1,5 +1,5 @@
 ---
-name: 'tryhackme-room'
+name: 'room'
 description: 'Create a new TryHackMe room directory structure'
 message: 'Create a new room: {{ inputs.name }}'
 root: '.'

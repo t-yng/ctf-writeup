@@ -16,7 +16,7 @@ Searchsploit is a tool that allows you to search for exploits in the Exploit Dat
 Path is the exploit allows you to attack the target with the vulnerability.
 
 ```shell
-searchsploit fuel cms
+$ searchsploit fuel cms
 
 ---------------------------------------------------------------------------------------------------------------------------------------------------- ---------------------------------
  Exploit Title                                                                                                                                      |  Path
@@ -35,7 +35,7 @@ Shellcodes: No Results
 You can download the exploit with the -m option.
 
 ```shell
-searchsploit -m 50477
+$ searchsploit -m 50477
 
   Exploit: Fuel CMS 1.4.1 - Remote Code Execution (3)
       URL: https://www.exploit-db.com/exploits/50477
@@ -72,7 +72,7 @@ you can login as admin/admin through http://10.49.143.242/fuel
 ### searchsploit
 
 ```shell
-searchsploit fuel cms
+$ searchsploit fuel cms
 
 ---------------------------------------------------------------------------------------------------------------------------------------------------- ---------------------------------
  Exploit Title                                                                                                                                      |  Path

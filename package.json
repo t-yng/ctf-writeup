@@ -1,0 +1,15 @@
+{
+  "name": "tryhackme-workspace",
+  "version": "1.0.0",
+  "description": "TryHackMe room workspace",
+  "private": true,
+  "scripts": {
+    "new": "scaffdog generate room"
+  },
+  "devDependencies": {
+    "scaffdog": "^4.1.0"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}

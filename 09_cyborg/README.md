@@ -96,15 +96,11 @@ http_access allow auth_users
 I got the password `squidward`.
 
 ```shell
-$ john --format=md5crypt --wordlist=/usr/share/wordlists/rockyou.txt ./src/hash.txt
-Using default input encoding: UTF-8
-Loaded 1 password hash (md5crypt, crypt(3) $1$ (and variants) [MD5 128/128 ASIMD 4x2])
-Will run 4 OpenMP threads
-Press 'q' or Ctrl-C to abort, almost any other key for status
-squidward        (?)
-1g 0:00:00:00 DONE (2025-12-13 08:33) 1.960g/s 76549p/s 76549c/s 76549C/s thankyou1..pajarita
-Use the "--show" option to display all of the cracked passwords reliably
-Session completed.
+# Crack the hash
+$ hashcat '$apr1$BpZ.Q.1m$F0qqPwHSOG50URuOVQTTn.' /usr/share/wordlists/rockyou.txt -m 1600
+...
+$apr1$BpZ.Q.1m$F0qqPwHSOG50URuOVQTTn.:squidward
+...
 ```
 
 ### Restore the archive

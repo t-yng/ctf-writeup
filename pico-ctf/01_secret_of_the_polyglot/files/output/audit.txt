@@ -1,0 +1,23 @@
+Foremost version 1.5.7 by Jesse Kornblum, Kris Kendall, and Nick Mikus
+Audit File
+
+Foremost started at Fri Jan  9 00:51:37 2026
+Invocation: foremost -i flag2of2-final.pdf -o output 
+Output directory: /home/kali/tryhackme/output
+Configuration file: /etc/foremost.conf
+------------------------------------------------------------------
+File: flag2of2-final.pdf
+Start: Fri Jan  9 00:51:37 2026
+Length: 3 KB (3362 bytes)
+ 
+Num	 Name (bs=512)	       Size	 File Offset	 Comment 
+
+0:	00000000.png 	      914 B 	          0 	  (50 x 50)
+Finish: Fri Jan  9 00:51:37 2026
+
+1 FILES EXTRACTED
+	
+png:= 1
+------------------------------------------------------------------
+
+Foremost finished at Fri Jan  9 00:51:37 2026

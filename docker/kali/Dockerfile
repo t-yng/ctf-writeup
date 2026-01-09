@@ -7,7 +7,8 @@ RUN apt update && apt install -y kali-linux-default
 # RUN another command to cache kali-linux-default
 # This can cause refer outdated packages because the list is cached above.
 RUN apt install -y \
-    iputils-ping
+    iputils-ping \
+    poppler-utils  # pdf tools
 
 # Install rustscan(arm64)
 RUN wget https://github.com/RustScan/RustScan/releases/download/2.4.1/aarch64-linux-rustscan.zip && \
